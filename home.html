@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Disaster Recovery Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #cbc9c9;
+        }
+        .header {
+            font-size: 32px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #2a2929;
+            color: #fff
+        }
+        .message {
+            font-size: 24px;
+            color: red;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .column {
+            flex: 50%;
+            padding: 10px;
+        }
+        .manage-system {
+            padding: 20px;
+            font-size: 25px;
+        }
+        .form-container {
+            padding: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">DISASTER RECOVERY MANAGEMENT</div>
+    <div class="message">Alert! A disaster has arisen in your system.</div>
+    <div class="container">
+        <div class="column">
+            <h2>Disaster Details:</h2>
+            <p>System crashes have been detected, leading to data loss and service interruptions.</p>
+        </div>
+        <div class="column">
+            <h2>Recovery Instructions:</h2>
+            <p>Take immediate action to restore system backups and investigate the root cause of the crashes.</p>
+        </div>
+    </div>
+    <div class="manage-system">
+        <p>Manage your system</p>
+    </div>
+    <div class="form-container">
+        <form id="systemForm">
+            <label for="systemName">System Name:</label><br>
+            <input type="text" id="systemName" name="systemName" required><br>
+            <label for="osType">OS Type:</label><br>
+            <input type="text" id="osType" name="osType" required><br>
+            <label for="disaster">Disaster:</label><br>
+            <input type="text" id="disaster" name="disaster" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
